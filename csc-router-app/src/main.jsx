@@ -7,7 +7,7 @@ import Home from "./pages/Home.jsx";
 import SignUp from "./pages/SignUp.jsx";
 import LogIn from "./pages/LogIn.jsx";
 import FavouriteDetail from "./pages/FavouriteDetail.jsx";
-import Favorite from "./pages/Favorite.jsx";
+import Favourite from "./pages/Favourite.jsx";
 import NotFound from "./pages/NotFound.jsx";
 
 const router = createBrowserRouter([
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "/", element: <Home /> },
-      { path: "/fav", element: <Favorite /> },
+      { path: "/fav", element: <Favourite /> },
       { path: "/fav/:favId", element: <FavouriteDetail /> },
     ],
   },

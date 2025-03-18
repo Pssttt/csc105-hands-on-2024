@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useNavigate } from "react-router-dom";
 
-const Favorite = () => {
+const Favourite = () => {
   const navigate = useNavigate();
 
   const favSchema = z.object({
@@ -100,4 +100,4 @@ const Favorite = () => {
   );
 };
 
-export default Favorite;
+export default Favourite;
