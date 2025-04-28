@@ -1,5 +1,5 @@
 import { Hono } from "hono";
-import { logger } from "hono/logger";
+import { cors } from "hono/cors";
 import todoRoutes from "./routes/todo.routes.ts";
 import { serve } from "@hono/node-server";
 
@@ -7,7 +7,7 @@ import { serve } from "@hono/node-server";
 const app = new Hono();
 
 // Add middleware for logging requests
-app.use("*", logger());
+app.use("*", cors());
 
 // Root route
 app.get("/", (c) => {
